@@ -5,6 +5,7 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
     %title= content_for?(:title) ? yield(:title) : 'Blog'
+    %script{:defer => "defer", :src => "https://use.fontawesome.com/releases/v5.0.6/js/all.js"}
     =# Include style per-controller - vendor plugins
     = stylesheet_link_tag params[:controller] if ::Rails.application.assets_manifest.find_sources("#{params[:controller]}.css")
     -# Main css styles
@@ -18,7 +19,8 @@
     = yield
     = javascript_include_tag params[:controller] if ::Rails.application.assets_manifest.find_sources("#{params[:controller]}.js")
     = content_for?(:footer_scripts) ? yield(:footer_scripts) : ""
-
+  %footer
+    = render 'layouts/footer'
 
 
 -# <!DOCTYPE html>
