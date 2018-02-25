@@ -40,6 +40,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :development do
@@ -57,3 +58,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'haml'
 gem 'carrierwave', '~> 1.0'
 gem 'devise'
+gem 'materialize-sass', '~> 1.0.0.alpha4'
+gem 'material_icons'
