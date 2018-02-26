@@ -1,34 +1,79 @@
+.section
+  .row
+    .col.s12.m4
+      .card.z-depth-2.hoverable
+        .card-image
+          = image_tag "sample-1.jpg"
+          %span.card-title Rest
+        .card-content
+          %p
+            I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.
+        .card-action
+          %a{:href => "#"} This is a link
+    .col.s12.m4
+      .card.z-depth-2.hoverable
+        .card-image
+          = image_tag "sample-3.jpg"
+          %span.card-title Travel
+        .card-content
+          %p
+            I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.
+        .card-action
+          %a{:href => "#"} This is a link
+    .col.s12.m4
+      .card.z-depth-2.hoverable
+        .card-image
+          = image_tag( "sample-2.jpg", :class => "circle")
+          %span.card-title Explore
+        .card-content
+          %p
+            I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.
+        .card-action
+          %a{:href => "#"} This is a link
 .row
-  .col.s12.m4
-    .card
-      .card-image
-        = image_tag "sample-1.jpg"
-        %span.card-title Rest
-      .card-content
+  .col.s12
+    .card-panel.darken-2.z-depth-2.hoverable
+      .card-title.center-align
+        %h3 Skills
         %p
-          I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.
-      .card-action
-        %a{:href => "#"} This is a link
-  .col.s12.m4
-    .card
-      .card-image
-        = image_tag "sample-3.jpg"
-        %span.card-title Travel
-      .card-content
-        %p
-          I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.
-      .card-action
-        %a{:href => "#"} This is a link
-  .col.s12.m4
-    .card
-      .card-image
-        = image_tag "sample-2.jpg"
-        %span.card-title Explore
-      .card-content
-        %p
-          I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.
-      .card-action
-        %a{:href => "#"} This is a link
+          %em
+            "You know, like nunchuck skills, bo hunting skills, computer hacking skills. Girls only like guys who have great skills."
+        .divider
+        .section
+      .card-content.valign-wrapper.center-align
+        %div.center
+          .col.s12.m3
+            = image_tag( "logos/rails-plain", :class => "tech-icon")
+            %span.card-title
+              %h6 Ruby on Rails
+          .col.s12.m3
+            = image_tag( "logos/sass-original", :class => "tech-icon")
+            %span.card-title
+              %h6 Sass
+          .col.s12.m3
+            = image_tag( "logos/javascript-original", :class => "tech-icon")
+            %span.card-title
+              %h6 Javascript
+          .col.s12.m3
+            = image_tag( "logos/bootstrap-plain", :class => "tech-icon")
+            %span.card-title
+              %h6 Bootstrap
+          .col.s12.m3
+            = image_tag( "logos/coffeescript-original", :class => "tech-icon")
+            %span.card-title
+              %h6 Coffeescript
+          .col.s12.m3
+            = image_tag( "logos/jquery-original", :class => "tech-icon")
+            %span.card-title
+              %h6 JQuery
+          .col.s12.m3
+            = image_tag( "logos/css3-plain", :class => "tech-icon")
+            %span.card-title
+              %h6 CSS
+          .col.s12.m3
+            = image_tag( "logos/postgresql-original", :class => "tech-icon")
+            %span.card-title
+              %h6 Postgres
