@@ -5,6 +5,8 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
     %title= content_for?(:title) ? yield(:title) : 'Blog'
+    %link{:href => "#{image_url 'Pohl989_logo.png'}", :rel => "shortcut icon"}
+
     %script{:defer => "defer", :src => "https://use.fontawesome.com/releases/v5.0.6/js/all.js"}
     =# Include style per-controller - vendor plugins
     = stylesheet_link_tag params[:controller] if ::Rails.application.assets_manifest.find_sources("#{params[:controller]}.css")
