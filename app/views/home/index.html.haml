@@ -15,65 +15,22 @@
       .card.z-depth-2.hoverable
         .card-image
           = image_tag "sample-3.jpg"
-          %span.card-title Travel
+          %span.card-title Comunidas Unidas
         .card-content
           %p
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.
+            A full-stack Ruby on Rails project for a local NGO. This project manages their grant requirements and tracks their community outreach.
         .card-action
           %a{:href => "#"} This is a link
     .col.s12.m4
       .card.z-depth-2.hoverable
         .card-image
           = image_tag( "sample-2.jpg", :class => "circle")
-          %span.card-title Explore
+          %span.card-title cnsrvit.io
         .card-content
           %p
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.
+            A full-stack Ruby on Rails project for American Conservation Experience
+            The web app manages their business and humam resources needs.
         .card-action
           %a{:href => "#"} This is a link
-.row
-  .col.s12
-    .card-panel.darken-2.z-depth-2.hoverable
-      .card-title.center-align
-        %h3 Skills
-        %p
-          %em
-            "You know, like nunchuck skills, bo hunting skills, computer hacking skills. Girls only like guys who have great skills."
-        .divider
-        .section
-      .card-content.valign-wrapper.center-align
-        %div.center
-          .col.s6.m3
-            = image_tag( "logos/rails-plain", :class => "tech-icon")
-            %span.card-title
-              %h6 Ruby on Rails
-          .col.s6.m3
-            = image_tag( "logos/sass-original", :class => "tech-icon")
-            %span.card-title
-              %h6 Sass
-          .col.s6.m3
-            = image_tag( "logos/javascript-original", :class => "tech-icon")
-            %span.card-title
-              %h6 Javascript
-          .col.s6.m3
-            = image_tag( "logos/bootstrap-plain", :class => "tech-icon")
-            %span.card-title
-              %h6 Bootstrap
-          .col.s6.m3
-            = image_tag( "logos/coffeescript-original", :class => "tech-icon")
-            %span.card-title
-              %h6 Coffeescript
-          .col.s6.m3
-            = image_tag( "logos/jquery-original", :class => "tech-icon")
-            %span.card-title
-              %h6 JQuery
-          .col.s6.m3
-            = image_tag( "logos/css3-plain", :class => "tech-icon")
-            %span.card-title
-              %h6 CSS
-          .col.s6.m3
-            = image_tag( "logos/postgresql-original", :class => "tech-icon")
-            %span.card-title
-              %h6 Postgres
+= render 'home/skills'
+= render 'home/skills_progress_bars'

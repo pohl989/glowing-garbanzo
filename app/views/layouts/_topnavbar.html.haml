@@ -1,19 +1,40 @@
-%nav.cyan
+
+
+%nav.indigo
   .nav-wrapper
-    %a.brand-logo{:href => "#!"} Pohl989
+    -# %img.brand-logo{:src => "Pohl989_logo.png", :href => "/"}
+    -# .brand-logo
+    -#   %a.brand-logo{:href => "#!"}
+    -#     = image_tag("sample-3.jpg")
+    .brand-logo{:style => "margin-left: 20px; margin-top: 8px"}
+      -# = link_to "/" do
+      %img{:src => "#{image_url 'Pohl989_logo_side_font_big.png'}", :style => "height: 50px;"}/
+
+      -# = image_tag("sample-3.jpg")
+
     %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
       %i.material-icons menu
     %ul.right.hide-on-med-and-down
       %li
         %a{:href => "/"} About
       %li
+        -#Previous experience
         %a{:href => "/"} Portfolio
       %li
-        %a{:href => "/"} Skills
+        %a{:href => "/"} Background
+      %li
+        %a{:href => "/"} Bio
+      %li
+        %a{:href => "/"} Course Goals
     %ul#mobile-demo.side-nav
       %li
         %a{:href => "/"} About
       %li
+        -#Previous experience
         %a{:href => "/"} Portfolio
       %li
-        %a{:href => "/"} Skills
+        %a{:href => "/"} Background
+      %li
+        %a{:href => "/"} Bio
+      %li
+        %a{:href => "/"} Course Goals

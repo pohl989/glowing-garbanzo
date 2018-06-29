@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subject: MyText
+  body: MyText
+  email: MyText
+  phone: MyText
+  full_name: MyText
+  receive_updates: false
+
+two:
+  subject: MyText
+  body: MyText
+  email: MyText
+  phone: MyText
+  full_name: MyText
+  receive_updates: false
