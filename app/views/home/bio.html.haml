@@ -1,1 +1,31 @@
-bio
+%h1 bio
+
+.font-green
+  %p Hello World! I'm Ben.
+  %p I love creating web based data solutions for people. There is nothing better than creating a product that improves people's lives. My programming langauge of choice is Ruby, but lately I've been interested getting more in javascript frameworks & Front-End development.
+  %p When I'm am not spending my time coding, I am escaping to the great outdoors. I love camping, hiking, and lately I have been trying to visit as many National Parks as I can. So far I'm at 27. The most unique expeience was hiking 10 miles to see a lava flow in Hawaii.
+  -#<Contact id: 1, subject: nil, body: nil, email: nil, phone: nil, full_name: nil, receive_updates: nil, created_at: "2018-06-30 18:09:51", updated_at: "2018-06-30 18:09:51">
+
+  = form_for Contact.new , html: {  "data-no-turbolink": true , id: 'form', class: 'wizard-big'} do |f|
+    %h3 Contact me
+    .row
+      %form.col.s12
+        .row
+          .input-field.col.s12
+            = f.text_field :full_name, id: 'full_name', class: "validate"
+            %label{:for => "full_name"} Full Name
+          .input-field.col.s12
+            = f.text_field :full_name, id: 'email', class: "validate"
+            %label{:for => "email"} e-mail
+        .row
+          .input-field.col.s12
+            = f.text_field :full_name, id: 'phone'
+            %label{:for => "phone"} phone
+        .row
+          .input-field.col.s12
+            = f.text_field :body, id: 'message', class: "validate"
+            %label{:for => "message"} Message
+
+    %br/
+-# = javascript_include_tag "datapicker/bootstrap-datepicker.js"
+-# = javascript_include_tag "validate/jquery.validate.min.js"
