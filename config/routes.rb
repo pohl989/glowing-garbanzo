@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get 'course_goals', :to => 'home#course_goals'
   get 'about', :to => 'home#about'
 
+  resources :contacts
 
 end
