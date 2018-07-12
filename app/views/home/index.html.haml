@@ -1,7 +1,7 @@
 .section
   .row
-    .col.s12
-      %h3.header Projects
+    .col.s12#portfolio
+      %h3.header Portfolio
       %h6.subheader What I am up to right now. My latest work.
     .col.s12.m4
       .card.z-depth-2.hoverable
@@ -35,24 +35,22 @@
             The web app manages their business and human resources needs.
         .card-action
           %a{:href => "#"} This is a link
-    .col.s12
+    .col.s12#skills
       %h3.header Skills
       %h6.subheader "You know, like nunchuck skills, bo hunting skills, computer hacking skills. Girls only like guys who have great skills."
     = render 'home/skills'
-    .col.s12
+    .col.s12.m6
       %h3.header Bio
       %h6.subheader Who is this guy? Do we trust him? Maybe I should read his bio to find out.
-    .col.s12
       .card-panel.darken-2.z-depth-2.hoverable
         .card-content.valign-wrapper
           .col.s12
             %p.flow-text Hello World! I'm Ben.
             %p.flow-text I love creating web based data solutions for people. There is nothing better than creating a product that improves people's lives. My programming langauge of choice is Ruby, but lately I've been interested getting more in javascript frameworks & Front-End development.
             %p.flow-text When I'm am not spending my time coding, I am escaping to the great outdoors. I love camping, hiking, and lately I have been trying to visit as many National Parks as I can. So far I'm at 27. The most unique expeience was hiking 10 miles to see a lava flow in Hawaii.
-    .col.s12
+    .col.s12.m6
       %h3.header Contact Me
       %h6.subheader This is great! I need a web based data solution. I should reach out to learn more.
-    .col.s12
       .card-panel.darken-2.z-depth-2.hoverable
         .card-content.valign-wrapper
           .col.s12
@@ -79,10 +77,10 @@
                     -# Submit
                     -# %i.material-icons.right send
 
-                    =f.submit "Submit", class: "btn waves-effect waves-light" do
+                    =f.submit "Submit", class: "btn waves-effect waves-light deep-orange hoverable" do
                       %i.material-icons.right
                     -# = link_to project_path(project), class: "btn btn-white btn-sm" do
                     -#   %i.fa.fa-folder
                     -#     View
 
-              %br/
+          %br/
