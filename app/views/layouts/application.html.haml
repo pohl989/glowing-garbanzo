@@ -16,7 +16,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = content_for?(:header_scripts) ? yield(:header_scripts) : ""
     = csrf_meta_tags
-  %body.green.lighten-4
+  %body
     = render 'layouts/topnavbar'
     = yield
     = javascript_include_tag params[:controller] if ::Rails.application.assets_manifest.find_sources("#{params[:controller]}.js")
