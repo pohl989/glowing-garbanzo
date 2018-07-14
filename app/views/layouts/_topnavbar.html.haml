@@ -16,7 +16,7 @@
       %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
         %i.material-icons menu
       %ul.right.hide-on-med-and-down
-        %li
+        %li{:class => "#{'active' if current_page?('#portfolio')}"}
           %a{:href => "#portfolio"} Portfolio
         %li
           %a{:href => "#skills"} Skills

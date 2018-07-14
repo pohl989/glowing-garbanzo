@@ -26,6 +26,12 @@ nav .brand-logo {
   }
 }
 
+.right.hide-on-med-and-down ul li:active {
+    background-color: green;
+}
+
+
+
 .center {
   margin: auto;
 }
@@ -67,9 +73,20 @@ nav .brand-logo {
   -o-background-size: cover;
 }
 
-.card-image.profile img{
-  height: 460px;
-}
+// .card-image.profile img{
+//   height: 460px;
+//   width: 100%;
+// }
+
+.profile {
+    width: 100%;
+    height: 460px;
+    background-image: url("sample-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    position: relative;
+}​
 
 .big-box {
   height:100vh;
