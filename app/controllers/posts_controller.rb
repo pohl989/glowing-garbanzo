@@ -42,7 +42,7 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+        format.html  { redirect_back(fallback_location: root_path, :notice => 'Comment was successfully added.') }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit }
