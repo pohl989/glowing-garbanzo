@@ -1,0 +1,137 @@
+<div class="section">
+  <div class="row">
+    <div class="section scrollspy container">
+      <div class="col s12" id="portfolio">
+        <h3 class="header">Portfolio</h3>
+        <h6 class="subheader">What I am up to right now. My latest work.</h6>
+      </div>
+      <div class="col s12 m4">
+        <div class="card z-depth-2 hoverable">
+          <div class="card-image">
+            <%= image_tag "sample-1.jpg" %>
+            <span class="card-title">Apptastic App</span>
+          </div>
+          <div class="card-content">
+            <p>
+              This is where I am going to demo my future work.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="#">View my work</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card z-depth-2 hoverable">
+          <div class="card-image">
+            <%= image_tag "sample-3.jpg" %>
+            <span class="card-title">Travel Budgeter</span>
+          </div>
+          <div class="card-content">
+            <p>
+              This is where I am going to demo my future work.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="#">View my work</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card z-depth-2 hoverable">
+          <div class="card-image">
+            <%= image_tag( "sample-2.jpg", :class => "circle") %>
+            <span class="card-title">CNSERVIT.io</span>
+          </div>
+          <div class="card-content">
+            <p>
+              This is where I am going to demo my future work.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="#">View my work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section scrollspy container">
+      <div class="col s12" id="skills">
+        <h3 class="header">Skills</h3>
+        <h6 class="subheader">"You know, like nunchuck skills, bo hunting skills, computer hacking skills. Girls only like guys who have great skills."</h6>
+      </div>
+      <%= render 'home/skills' %>
+    </div>
+    <div class="section scrollspy container">
+      <div class="col s12 m12" id="bio">
+        <h3 class="header">Bio</h3>
+        <h6 class="subheader">Who is this guy? Do we trust him? Maybe I should read his bio to find out.</h6>
+        <div class="card-panel darken-2 z-depth-2 hoverable">
+          <div class="card-content valign-wrapper">
+            <div class="col s12">
+              <p class="flow-text">Hello World! I'm Ben.</p>
+              <p class="flow-text">I love creating web based data solutions for people. There is nothing better than creating a product that improves people's lives. My programming langauge of choice is Ruby, but lately I've been interested getting more in javascript frameworks & Front-End development.</p>
+              <p class="flow-text">When I'm am not spending my time coding, I am escaping to the great outdoors. I love camping, hiking, and lately I have been trying to visit as many National Parks as I can. So far I'm at 20. The most unique expeience was hiking 10 miles to see a lava flow in Hawaii.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section scrollspy container">
+      <div class="col s12" id="contactMe">
+        <h3 class="header">Contact Me</h3>
+        <h6 class="subheader">This is great! I need a web based data solution. I should reach out to learn more.</h6>
+        <div class="card-panel darken-2 z-depth-2 hoverable">
+          <div class="card-content valign-wrapper">
+            <div class="col s12 m6 left">
+              <%= form_for Contact.new , html: {  "data-no-turbolink": true , id: 'form', class: 'wizard-big'} do |f| %>
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <%= f.text_field :full_name, id: 'full_name', class: "validate" %>
+                        <label for="full_name">Full Name</label>
+                      </div>
+                      <div class="input-field col s12">
+                        <%= f.text_field :full_name, id: 'email', class: "validate" %>
+                        <label for="email">e-mail</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <%= f.text_field :full_name, id: 'phone' %>
+                        <label for="phone">Phone</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <%= f.text_field :body, id: 'message', class: "validate" %>
+                        <label for="message">Message</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <% # %button.btn.waves-effect.waves-light{:name => "action", :type => "submit"} %>
+                      <% # Submit %>
+                      <% # %i.material-icons.right send %>
+                      <%= f.submit "Submit", class: "btn waves-effect waves-light deep-orange hoverable" do %>
+                        <i class="material-icons right"></i>
+                      <% end %>
+                      <% # = link_to project_path(project), class: "btn btn-white btn-sm" do %>
+                      <% #   %i.fa.fa-folder %>
+                      <% #     View %>
+                    </div>
+                  </form>
+                </div>
+              <% end %>
+            </div>
+            <div class="col hide-on-small- m6 right">
+              <div class="profile">
+                <% # = image_tag "sample-1.jpg" %>
+              </div>
+            </div>
+          </div>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

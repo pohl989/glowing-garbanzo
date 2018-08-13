@@ -78,15 +78,20 @@ nav .brand-logo {
 //   width: 100%;
 // }
 
+// Doesn't scale well
 .profile {
     width: 100%;
     height: 460px;
     background-image: url("sample-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: left center;
     position: relative;
 }​
+
+// .profile-photo img {
+//   width: 100%;
+// }
 
 .big-box {
   height:100vh;
